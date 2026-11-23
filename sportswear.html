@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="SPORTIFY — custom sportswear. Design your game.">
+  <title>SPORTIFY — Custom Sportswear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sportswear.css">
+  <script src="sportswear.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    
+    <a class="brand" href="#home" aria-label="SPORTIFY home"><span class="brand-mark" aria-hidden="true">S</span><span>SPORTIFY<span class="brand-period">.</span></span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#shop" data-nav="shop">Shop</a>
+      <a href="#customize" data-nav="customize">Customize</a>
+      <a href="#cart" data-nav="cart">Cart <span class="cart-badge" id="cart-count">0</span></a>
+      <a href="#orders" data-nav="orders">My Orders</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+  </header>
+  <main id="app-main" tabindex="-1"></main>
+  <footer class="site-footer" id="contact">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">S</span><span>SPORTIFY<span class="brand-period">.</span></span></a>
+    <p>Custom sportswear. Design your game.</p>
+    <div class="footer-contact"><a href="mailto:hello@sportify.example">hello@sportify.example</a><span>About · Contact · Track Order · FAQ</span></div>
+    <span class="copyright">© 2026 SPORTIFY</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
